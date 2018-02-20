@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bi.voicetolist5.ViewFragment">
+
+    <!--Having these settings of Relative Layout  fixes bottom nav issues on bigger screen-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            />
+
+        <!--android:clipToPadding="false"
+         Dont think this makes much of diff here-->
+
+    </RelativeLayout>
+
+</FrameLayout>

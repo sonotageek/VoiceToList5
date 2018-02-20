@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VoiceToList</string>
+    <string name="title_name">Voice-To-List</string>
+
+    <string name="record_notes">Record notes</string>
+    <string name="tap_mic_to_record">Tap mic to record</string>
+
+</resources>

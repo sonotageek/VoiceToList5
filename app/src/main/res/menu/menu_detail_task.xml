@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/saveItem"
+        android:icon="@drawable/ic_save_white_36dp"
+        app:showAsAction="always|collapseActionView"
+        android:orderInCategory="100"
+
+        android:title="View"/>
+
+    <item android:id="@+id/cancelItem"
+        android:icon="@drawable/ic_clear_white_36dp"
+        app:showAsAction="always|collapseActionView"
+        android:orderInCategory="100"
+        android:title="Sort"/>
+
+    <item android:id="@+id/editItem"
+        android:icon="@drawable/ic_mode_edit_white_36dp"
+        app:showAsAction="always|collapseActionView"
+        android:orderInCategory="100"
+        android:title="Edit"
+        />
+
+    <!-- <item android:id="@+id/shareItem"
+        android:icon="@drawable/ic_action_share"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:title="Share"/> -->
+
+
+
+    <item android:id="@+id/delItem"
+        android:icon="@drawable/ic_delete_white_36dp"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:title="Delete"/>
+
+    <item android:id="@+id/action_share"
+        android:icon="@drawable/ic_share_white_36dp"
+        app:showAsAction="always"
+        android:title="Share"
+        android:orderInCategory="100"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+
+
+</menu>

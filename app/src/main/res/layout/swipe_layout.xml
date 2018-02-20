@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipe"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp"
+
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp">
+
+
+    <!--Button view for Right to LEft -->
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/bottom_wrapper" >
+
+        <!--android:background="#0076a5" -->
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#016e9a"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="#fff"
+
+            />
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#044057"
+            android:gravity="center"
+            android:text="Share"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#016e9a"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+
+    <!-- Another Button View For Left To Right -->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnLocation"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_settings"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            android:descendantFocusability="blocksDescendants"
+            />
+    </LinearLayout>
+
+
+    <!-- Top View, Row ItemView of RecyclerView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:background="?android:selectableItemBackground">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:lineSpacingExtra="15dp"
+            />
+
+        <!--Date and time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="1dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="0dp"
+            android:text="date"
+            android:textColor="@color/date_time_txt_color"
+            android:layout_marginLeft="8dp"
+           />
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="1dp"
+            android:paddingTop="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="0dp"
+            android:text="time"
+            android:textColor="@color/date_time_txt_color"
+            android:layout_marginLeft="8dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

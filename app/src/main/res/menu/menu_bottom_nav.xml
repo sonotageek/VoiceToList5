@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_viewNote"
+        android:icon="@drawable/ic_list_white_36dp"
+        android:title="View"
+        app:showAsAction="always"
+        android:enabled="true" />
+    <item android:id="@+id/action_recNote"
+        android:icon="@drawable/ic_mic_white_36dp"
+        android:title="Mic"
+        app:showAsAction="always"
+        android:enabled="true" />
+
+    <item android:id="@+id/action_addNote"
+        android:icon="@drawable/ic_mode_edit_white_36dp"
+        android:title="Write"
+        app:showAsAction="always"
+        android:enabled="true"
+        />
+
+
+
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="6dp"
+    tools:context="com.example.bi.voicetolist5.Item.ItemDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- All Task Data Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/dataLayout">
+
+            <!-- Date and ID Details-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:id="@+id/dateIDwrapper">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textColor="@color/date_time_txt_color"
+                android:id="@+id/dateText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/date_time_txt_color"
+                    android:id="@+id/timeText"/>
+            <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="id"
+                    android:textSize="10sp"
+                    android:gravity="end"
+                    android:layout_weight="0.1"
+                    android:id="@+id/idTxt"/>-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/bottomNav"
+                android:background="@drawable/shadow"/>
+
+                <!-- Task Details-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:id="@+id/scrollViewTask">
+                <!-- android:fillViewport="true"
+                android:layout_width="fill_parent" -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_below="@+id/dateIDwrapper"
+                    android:text="name"
+                    android:visibility="visible"
+                    android:textSize="@dimen/textSize"
+                    android:paddingTop="2dp"
+                    android:id="@+id/textDetailTask"/>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Not sure if Relative Layout is needed-->
+    <!-- Edit Task Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="0dp"
+        android:id="@+id/editTaskLayout"
+        android:layout_alignParentStart="true">
+
+        <!-- Edit Task-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/detail_text_color"
+            android:textSize="@dimen/textSize"
+            android:lineSpacingExtra="3dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:scrollbars="vertical"
+            android:enabled="true"
+            android:focusable="true"
+            android:drawableStart="@color/colorPrimary"
+            android:id="@+id/edittextDetailTask"/>
+
+    </RelativeLayout> <!-- End of Editing Layout-->
+
+</RelativeLayout>
